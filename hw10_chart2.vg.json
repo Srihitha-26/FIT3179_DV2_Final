@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 3000,
+    "height": 300,
+    "title": "Mean cases over the World!",
+    "data": {"url": "https://raw.githubusercontent.com/Srihitha-26/FIT3179_hw9/main/worldometer_data.csv"},
+    "layer": [
+      {
+        "mark": "area",
+        "encoding": {
+          "x": {
+            "field": "Country/Region",
+            "type": "nominal"
+          },
+          "y": {
+            "aggregate": "mean",
+            "field": "TotalCases",
+            "type": "quantitative",
+            "scale": {"type": "log"} 
+          },
+          "tooltip": [
+            {"field": "Country/Region", "type": "nominal"},
+            {"field": "TotalDeaths", "type": "quantitative"}
+          ]
+        }
+      },
+      {
+        "mark": "rule",
+        "encoding": {
+          "y": {
+            "aggregate": "mean",
+            "field": "TotalCases",
+            "type": "quantitative",
+            "scale": {"type": "log"} 
+          },
+          "color": {"value": "red"},
+          "size": {"value": 5}
+        }
+      }
+    ],
+    "config": {
+      "axisY": {"format": ".3s"} 
+    }
+  }
+  
