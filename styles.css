@@ -1,0 +1,39 @@
+#hw10 {
+	position: relative;
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#hw10_chart2 {
+	position: relative;
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#hw9 {
+	position: relative;
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	height: 1000px;
+	width: 800px;
+}
+
+
+.large-text {
+    font-weight: 300;
+}
+
+.blue-text {
+    color: blue;
+    font-size: 30px;
+}
